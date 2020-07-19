@@ -7,11 +7,7 @@ function factorial.factorial(n)
 end
 
 function fact(n, accum)
-  if n == 0 then
-    return accum
-  else
-    return fact(n - 1, accum * n)
-  end
+  return n == 0 and accum or fact(n - 1, accum * n)
 end
 
 return factorial
